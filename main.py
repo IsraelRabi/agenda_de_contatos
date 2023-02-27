@@ -15,7 +15,8 @@ opcao -> ''').lower()
         nome = input('Nome: ')
         sobrenome = input('Sobrenome: ')
         telefone = input('Telefone: ')
-        agenda.cadastrar_contato(nome, sobrenome, telefone)
+        cadastro = agenda.cadastrar_contato(nome, sobrenome, telefone)
+        print(cadastro)
         print()
     elif opcao == 'l':
         print()
@@ -24,6 +25,7 @@ opcao -> ''').lower()
     elif opcao == 'e':
         nome = input('Digite o nome do contato: ')
         print()
-        agenda.exibir_contato(nome)
+        contato = agenda.exibir_contato(nome)
+        print(contato)
         print()
 
